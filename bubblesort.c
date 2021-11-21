@@ -2,7 +2,6 @@
 
 int main()
 {
-    srand();
     int *yarr[] = {
         '3', 
         '9', 

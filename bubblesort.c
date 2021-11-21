@@ -1,44 +1,40 @@
 #include <stdio.h>
 
-int main()
-{
-    int yarr[] = 
-    {
-        '5',
-        '3',
-        '6',
-        '8',
-        '4',
-        '0',
-        '7',
-        '2',
-        '10',
-        '9'
-    };
+void bubble_sort(int arr[], int len) {
+    // arr[]: The array to sort; len: The length of the array
+	for (int i = 0; i < len; i++) {
+		for (int j = 0; j < len - i - 1; j++) {
+			if (arr[j] > arr[j + 1]) {
+				// Swap arr[j] and arr[j + 1]
+				int tmp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = tmp;
+			}
+		}
+	}
+}
+
+int main(void) {
+    // yarr is supposed to be an array of numbers, not an array of chars
+	int yarr[] = {
+		3, 
+		9, 
+		4, 
+		8, 
+		7, 
+		6,
+		1,
+		2, 
+		0,
+		10
+	};
+
+    // Sort yarr
+	bubble_sort(yarr, 10);
     
-    for(int i = 0; i < sizeof(yarr); i++)
-    {
-        int a = 0;
-        a++;
-        int b = 1;
-        b++;
-        
-        if(b || a == sizeof(yarr))
-        {
-            a = sizeof(yarr) - 1;
-            b = sizeof(yarr);
-        }
-        
-        do
-        {
-            if(yarr[a] < yarr[b])
-            {
-                const int yarr_a = yarr[a];
-                yarr[b] = yarr_a;
-                yarr[a] = yarr[b];
-            }
-        } while(b < sizeof(yarr));
-        
-        printf("%d\n%d", &yarr[a], yarr[b]);
-    }
+    // Prints the elements of yarr
+	for (int i = 0; i < 10; i++)
+		printf("%d\n", yarr[i]);
+
+	return 0;
 }

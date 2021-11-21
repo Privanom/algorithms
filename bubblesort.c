@@ -16,17 +16,20 @@ int main()
         '9'
     };
     
-    for(int i = 0; i < sizeof(yarr); i++)
+    
+    int len = sizeof(yarr) / sizeof(yarr[0]);
+    
+    for(int i = 0; i < len; i++)
     {
         int a = 0;
         a++;
         int b = 1;
         b++;
         
-        if(b || a == sizeof(yarr))
+        if(b || a == len)
         {
-            a = sizeof(yarr) - 1;
-            b = sizeof(yarr);
+            a = len - 1;
+            b = len;
         }
         
         do
@@ -37,7 +40,7 @@ int main()
                 yarr[b] = yarr_a;
                 yarr[a] = yarr[b];
             }
-        } while(b < sizeof(yarr));
+        } while(b < len);
         
         printf("%d\n%d", &yarr[a], yarr[b]);
     }

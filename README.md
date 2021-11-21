@@ -8,7 +8,7 @@ This is my first open source project, so i am open to criticisms, bugs, and idea
 ### To compile (with a makefile)
 `make`
 ### To compile (without a makefile)
-gcc -o bubblesort bubblesort.c
+`gcc -o bubblesort bubblesort.c`
 
 ## To run
 `./bubblesort`

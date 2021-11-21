@@ -2,84 +2,43 @@
 
 int main()
 {
-    int *yarr[] = {
-        '3', 
-        '9', 
-        '4', 
-        '8', 
-        '7', 
+    int yarr[] = 
+    {
+        '5',
+        '3',
         '6',
-        '1',
-        '2', 
-        '0', 
-        '10'
+        '8',
+        '4',
+        '0',
+        '7',
+        '2',
+        '10',
+        '9'
     };
-   
-    //Swaps yarr[0] and yarr[1] 
-    else if(yarr[0] < yarr[1])
-    {
-        const int yarr_0 = yarr[0];
-        yarr[0] = yarr[1];
-        yarr[1] = yarr_0;
-    }
     
-    else if(yarr[2] < yarr[3])
+    for(int i = 0; i < sizeof(yarr); i++)
     {
-        const int yarr_2 = yarr[2];
-        yarr[2] = yarr[3];
-        yarr[3] = yarr_2;
+        int a = 0;
+        a++;
+        int b = 1;
+        b++;
+        
+        if(b || a == sizeof(yarr))
+        {
+            a = sizeof(yarr) - 1;
+            b = sizeof(yarr);
+        }
+        
+        do
+        {
+            if(yarr[a] < yarr[b])
+            {
+                const int yarr_a = yarr[a];
+                yarr[b] = yarr_a;
+                yarr[a] = yarr[b];
+            }
+        } while(b < sizeof(yarr));
+        
+        printf("%d\n%d", &yarr[a], yarr[b]);
     }
-    
-    else if(yarr[3] < yarr[4])
-    {
-        const int yarr_3 = yarr[3];
-        yarr[3] = yarr[4];
-        yarr[4] = yarr_3;
-    }
-    
-    else if(yarr[4] < yarr[5])
-    {
-        const int yarr_4 = yarr[4];
-        yarr[4] = yarr[5];
-        yarr[5] = yarr_4;
-    }
-    
-    else if(yarr[5] < yarr[6])
-    {
-        const int yarr_5 = yarr[5];
-        yarr[5] = yarr[6];
-        yarr[6] = yarr_5;
-    }
-    
-    else if(yarr[6] < yarr[7])
-    {
-        const int yarr_6 = yarr[6];
-        yarr[6] = yarr[7];
-        yarr[7] = yarr_6;
-    }
-    
-    else if(yarr[7] < yarr[8])
-    {
-        const int yarr_7 = yarr[7];
-        yarr[7] = yarr[8];
-        yarr[8] = yarr_7;
-    }
-    
-    else if(yarr[8] < yarr[9])
-    {
-        const int yarr_8 = yarr[8];
-        yarr[8] = yarr[9];
-        yarr[9] = yarr_8;
-    }
-    
-    printf("%d\n", yarr[0]);
-    printf("%d\n", yarr[1]);
-    printf("%d\n", yarr[2]);
-    printf("%d\n", yarr[3]);
-    printf("%d\n", yarr[4]);
-    printf("%d\n", yarr[5]);
-    printf("%d\n", yarr[6]);
-    printf("%d\n", yarr[7]);
-    printf("%d\n", yarr[8]);
-    printf("%d\n", yarr[9]);
 }

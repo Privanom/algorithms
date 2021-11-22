@@ -3,10 +3,10 @@ A open source repository of different kinds of algorithms in c. Newbies are enco
 This is my first open source project, so i am open to criticisms, bugs, and ideas.
 
 
-### To compile (with a makefile)
+### To compile  (with a makefile)
 `make`
 ### To compile (without a makefile)
-`gcc -o bubblesort bubblesort.c`
+`gcc -o (whatever file)
 
 ## To run
-`./bubblesort`
+`./(name of file)`

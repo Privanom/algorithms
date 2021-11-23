@@ -68,4 +68,9 @@ int main()
         delay(5000); 
         exit(1);
     }
+    
+    else
+    {
+        printf("Error: Could not detect programming language");
+    }
 }

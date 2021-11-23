@@ -4,7 +4,6 @@ int main()
 {
     char *a[1000];
     register FILE *fptr;
-    int inp;
     
     if((fptr = fopen("program.txt", "r") == NULL))
     printf("error: create program.txt before creating");

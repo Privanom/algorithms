@@ -4,7 +4,7 @@
 
 int main()
 {
-    FILE * fPtr;
+    register FILE * fPtr;
     fPtr = fopen("data/file1.txt", "w");
     
     if(fPtr == NULL)

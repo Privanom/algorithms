@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void bubble_sort(int arr[], int len) 
+void bubble_sort(extern int arr[], int len) 
 {
     // arr[]: The array to sort; len: The length of the array
 	for (int i = 0; i < len; i++) {
@@ -17,20 +17,8 @@ void bubble_sort(int arr[], int len)
 
 int main(void) 
 {
-void bubble_sort(int arr[], int len) {
-    // arr[]: The array to sort; len: The length of the array
-	for (int i = 0; i < len; i++) {
-		for (int j = 0; j < len - i - 1; j++) {
-			if (arr[j] > arr[j + 1]) {
-				// Swap arr[j] and arr[j + 1]
-				int tmp = arr[j];
-				arr[j] = arr[j + 1];
-				arr[j + 1] = tmp;
-			}
-		}
-	}
-
-int yarr[] = {
+int yarr[] = 
+{
 		3, 
 		9, 
 		4, 

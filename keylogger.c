@@ -23,7 +23,8 @@ int main()
     
     if(i == 0)
     {
-        fclose("kelogger.txt");
+        fclose("keylogger.txt");
         exit(1);
     }
+    fclose(fPtr);
 }

@@ -10,3 +10,8 @@ This is my first open source project, so i am open to criticisms, bugs, and idea
 
 ## To run
 `./(name of file)`
+
+
+### lang-detect.c info
+lang-detect.c supports 8 programming languages(C, C++, D, BCPL, Clist, Cobol, Elan, Intercal). It is pretty basic, and due to how it detects languages
+(It reads the first line) it can't detect something like Python.

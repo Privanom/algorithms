@@ -71,4 +71,5 @@ int main()
     {
         printf("Error: Could not detect programming language");
     }
+    fclose(fptr);
 }

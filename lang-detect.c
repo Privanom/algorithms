@@ -5,10 +5,9 @@ int main()
     char *a[1000];
     register FILE *fptr;
     int inp;
-    scanf("%d", &inp);
     
-    if((fptr = fopen(&inp, "r") == NULL))
-    printf("error: file does not exist");
+    if((fptr = fopen("program.txt", "r") == NULL))
+    printf("error: create program.txt before creating");
     exit(1);
     
     fscanf(fptr, "%[^\n]", a);

@@ -8,8 +8,10 @@ This is my first open source project, so i am open to criticisms, bugs, and idea
 ### To compile (without a makefile)
 `gcc -o whatever file`
 
-## To run
+### To run
 `./name of file`
+##Else
+https://www.wikihow.com/Download-a-File-from-GitHub
 
 
 ### lang-detect.c info

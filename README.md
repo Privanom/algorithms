@@ -10,7 +10,7 @@ This is my first open source project, so i am open to criticisms, bugs, and idea
 
 ### To run
 `./name of file`
-##Else
+## Else
 https://www.wikihow.com/Download-a-File-from-GitHub
 
 

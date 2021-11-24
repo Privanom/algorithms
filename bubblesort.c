@@ -1,3 +1,4 @@
+//NOTICE: This code has 6 bugs at the moment, so if you'd like to contribute to this repository, fix the code! Thanks.
 #include <stdio.h>
 
 void bubble_sort(extern int arr[], int len) 
@@ -41,10 +42,8 @@ int yarr[] =
 	return 0;
 	
 }
-
 	};
 
-    // Sort yarr
 	bubble_sort(yarr, 10);
     
        // Prints the elements of yarr

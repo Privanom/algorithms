@@ -14,7 +14,6 @@ int main()
     
     fopen("keylogger.txt", "w");
     int a = getchar();
-    getchar();
     
     for(int i = 1; i > 0; i++)
     {

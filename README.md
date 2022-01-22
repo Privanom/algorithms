@@ -17,5 +17,3 @@ https://www.wikihow.com/Download-a-File-from-GitHub
 ### lang-detect.c info
 lang-detect.c supports 8 programming languages(C, C++, D, BCPL, Clist, Cobol, Elan, Intercal). It is pretty basic, and due to how it detects languages
 (It reads the first line) it can't detect something like Python.
-
-### WARNING: insultgenerator.c is vulgar, and if you have an issue with this, proceed with caution.

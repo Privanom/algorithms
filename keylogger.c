@@ -4,8 +4,8 @@
 
 int main()
 {
-    register FILE * fPtr;
-    fPtr = fopen("data/file1.txt", "w");
+    FILE * fPtr;
+    fPtr = fopen("file1.txt", "w");
     
     if(fPtr == NULL)
     {
@@ -16,9 +16,7 @@ int main()
     int a = getchar();
     
     for(int i = 1; i > 0; i++)
-    {
         fprintf(a, fPtr);
-    }
     
     if(i == 0)
     {

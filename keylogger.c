@@ -1,27 +1,27 @@
-//I am not responsible for the use of this algorithm for illegal purposes, as it is intended for education :).
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
+int keylog()
+{
+    FILE * fPtr;
+    fPtr = fopen("keylogger.txt", "w+");
+
+    fopen("keylogger.txt", "w");
+    const char *a = getchar();
+    
+    if(a != NULL)
+        fprintf(fPtr, a);
+    
+    time_t now = time(NULL);
+    struct tm *tm_struct = localtime(&now);
+    int hour = tm_struct->tm_hour;
+    
+    if(hour == 24)
+        fclose(fPtr);
+}
 
 int main()
 {
-    FILE * fPtr;
-    fPtr = fopen("file1.txt", "w");
-    
-    if(fPtr == NULL)
-    {
-        exit(1);
-    }
-    
-    fopen("keylogger.txt", "w");
-    int a = getchar();
-    
-    for(int i = 1; i > 0; i++)
-        fprintf(a, fPtr);
-    
-    if(i == 0)
-    {
-        fclose("keylogger.txt");
-        exit(1);
-    }
-    fclose(fPtr);
+    keylog();
 }

@@ -59,7 +59,7 @@ void main() {
     printf("\nEnter element to search: ");
     scanf("%d",&key);
 
-    if(Search(RootPtr, key) == 1) {
+    if(Search(RootPtr, key) == 0) {
         printf("\nFound\n");
     } else {
         printf("\nNot Found\n");

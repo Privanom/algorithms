@@ -1,19 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
 
-int count(int num) 
+void count(int num) 
 {
     printf("[");
     
     if(num > 20)
     {
         int i;
-        for(i = 0; i < num; i++)
+        for(i = 0; i < num-1; i++)
             printf("\n%d, \n", i);
             
-        if(i == num + 1)
-            printf("]");
+        if(i == num-1)
+            printf("\n%d\n]\n",i);
     } else
     {
         int i;
@@ -21,7 +19,7 @@ int count(int num)
             printf("%d", i);
             
         if(i == num)
-            printf("]");
+            printf("]\n");
     }
 }
 
